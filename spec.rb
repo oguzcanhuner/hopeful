@@ -1,8 +1,11 @@
+require "./expectations"
+
 def describe(description, &block)
   ExampleGroup.new(block).evaluate! 
 end
 
 class ExampleGroup
+
   def initialize(block)
     @block = block
     @number = 2
@@ -18,17 +21,5 @@ class ExampleGroup
 end
 
 class Object
-  def should
-    DelayedAssertion.new(self)
-  end
-end
-
-class DelayedAssertion
-  def initialize(subject)
-    @subject = subject
-  end
-
-  def ==(object)
-   raise AssertionError unless @subject == object
-  end 
+  include Expectations
 end
