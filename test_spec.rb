@@ -3,7 +3,7 @@ require './spec.rb'
 
 class TestDescribe < Test::Unit::TestCase
   def test_that_it_can_pass
-    describe "some thing" do
+    describe "some test" do
       it "has some property" do
       end
     end
@@ -11,7 +11,7 @@ class TestDescribe < Test::Unit::TestCase
 
   def test_that_it_can_fail
     assert_raise(IndexError) do
-      describe "something failing thing" do
+      describe "some failing test" do
         it "fails" do
           raise IndexError
         end

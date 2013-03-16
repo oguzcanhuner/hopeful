@@ -5,8 +5,9 @@ class DelayedAssertion
 
   def ==(object)
    raise AssertionError unless @subject == object
-  end 
-
-  def AssertionError < Exception
+    end 
   end
+
+class AssertionError < Exception
 end
+
