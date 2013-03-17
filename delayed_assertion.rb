@@ -7,7 +7,7 @@ class DelayedAssertion
     if operator.evaluate(@subject)
       return true
     else
-      return AssertionError
+      raise AssertionError
     end
   end
 end

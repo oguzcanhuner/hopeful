@@ -1,5 +1,6 @@
 require 'test/unit'
 require './spec.rb'
+require "pry"
 
 class TestDescribe < Test::Unit::TestCase
   def test_that_it_can_pass
@@ -22,32 +23,28 @@ end
 
 class TestAssertion < Test::Unit::TestCase
   def test_that_equals_can_pass
-    2.should == 2
   end
 
   def test_that_equals_can_fail
-    assert_raise(AssertionError) do
-      2.should == 3
-    end
   end
 
   def test_be_true_passes
-    true.should.be_true
+    2.should be_true
   end
 
   def test_be_true_fails
     assert_raise(AssertionError) do
-      false.should.be_true
+      nil.should be_true 
     end
   end
 
   def test_be_false_passes
-    false.should.be_false
+    false.should be_false
   end
 
   def test_be_false_fails
     assert_raise(AssertionError) do
-      true.should.be_false
+      2.should be_false
     end
   end
 
