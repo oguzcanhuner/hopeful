@@ -15,6 +15,8 @@ If you have any questions you can email me at oguzcanhuner@gmail.com.
 TODO:
 
 - figure out how to create matchers which can be called without a dot. for example:
+
     something.should be_nil
+
 - create descriptive exceptions
 - implement more matchers
