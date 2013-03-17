@@ -11,3 +11,10 @@ More than anything, I want this to be a hub for people to practice on, so anyone
 to contribute, no matter what your level of skill. 
 
 If you have any questions you can email me at oguzcanhuner@gmail.com.
+
+TODO:
+
+- figure out how to create matchers which can be called without a dot. for example:
+    something.should be_nil
+- create descriptive exceptions
+- implement more matchers
