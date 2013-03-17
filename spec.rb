@@ -1,4 +1,5 @@
 require "./expectations"
+require "./matchers"
 
 def describe(description, &block)
   ExampleGroup.new(block).evaluate! 
@@ -22,4 +23,5 @@ end
 
 class Object
   include Expectations
+  include Matchers
 end
