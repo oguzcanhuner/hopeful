@@ -3,13 +3,16 @@
 This is a project which was massively inspired by one of Gary Bernhardt's earlier
 screencasts on [DAS](https://www.destroyallsoftware.com/screencasts/catalog/building-rspec-from-scratch)
 
-The idea is to recreate rspec from scratch to allow me (and whoever else) to use some of the
-more advanced ruby language features. I want to create rspec functionality with a different
-syntax. I'm thinking something along the lines of:
+The idea is to recreate rspec (a very popular ruby testing framework from scratch to allow me 
+(and whoever else) to use some of the more advanced ruby language features. I want to create 
+rspec functionality with a different syntax. I'm thinking something along the lines of:
 
-    i_hope{ something.call }.is true
-    i_hope_for{ true }.to be_true
-    please_let{ something }.be true
+    describe "when testing for true thing" do
+        i_hope{ something.call }.is true
+        i_hope_for{ true }.to be_true
+        please_let{ something }.be true
+        
+    end
 
 Along with the standard rspec should syntax
 
