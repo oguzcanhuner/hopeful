@@ -9,7 +9,6 @@ class ExampleGroup
 
   def initialize(block)
     @block = block
-    @number = 2
   end
 
   def evaluate!
